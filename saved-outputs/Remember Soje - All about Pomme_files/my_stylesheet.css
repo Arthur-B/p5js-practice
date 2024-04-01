@@ -1,0 +1,152 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Oswald&family=Roboto&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=JetBrains+Mono&family=Oswald&family=Roboto&display=swap');
+
+/*
+# ==============================================================================
+# Style header 
+# ==============================================================================
+*/
+
+.text-header {
+    color: black;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Make dropdown on hover*/
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+
+/*
+# ==============================================================================
+# Style page fonts
+# ==============================================================================
+*/
+
+.last-container {
+    padding-bottom: 10vh;
+    /* White padding at bottom of page */
+}
+
+.page-title {
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3em;
+    /* h1: 2em */
+}
+
+.page-subtitle {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+}
+
+.tldr {
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+    margin-bottom: 50px;
+    padding-top: 1em;
+    margin-top: 1em;
+}
+
+.tldr p {
+    font-family: 'JetBrains Mono';
+}
+
+.keypoint {
+    font-weight: bolder;
+}
+
+.section-title {
+    background-color: black;
+    color: white;
+    text-align: left;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5em;
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    margin-bottom: 50px;
+}
+
+.project-title {
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: larger;
+    text-align: center;
+    text-decoration: none;
+}
+
+.caption {
+    color: grey;
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*
+# ==============================================================================
+# Flip animation for projects/career pages
+# ==============================================================================
+*/
+
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+    animation: flip-box 1s;
+    position: relative;
+    text-align: center;
+    transform-style: preserve-3d;
+}
+
+@keyframes flip-box {
+    from {
+        transform: rotateY(90deg);
+        opacity: 0;
+    }
+
+    to {
+        transform: rotateY(0deg);
+        opacity: 1;
+    }
+}
+
+/*
+# ==============================================================================
+# Slide-in animations
+# ==============================================================================
+*/
+
+/* Slide up */
+
+.slide-up {
+    height: auto;
+    overflow: hidden;
+}
+
+.slide-up .inner {
+    animation: slide-up 1s;
+    margin-top: 0%;
+}
+
+@keyframes slide-up {
+    from {
+        margin-top: 100%;
+        opacity: 0;
+    }
+
+    to {
+        margin-top: 0%;
+        opacity: 1;
+    }
+}
